@@ -11,7 +11,7 @@ public class StepTesting {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sad_d\\IdeaProjects\\LearningMavenProjectLQ\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
