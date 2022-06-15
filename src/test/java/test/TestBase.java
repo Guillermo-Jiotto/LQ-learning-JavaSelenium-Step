@@ -25,6 +25,7 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         homeScreenPage = PageFactory.initElements(driver, HomeScreenPage.class);
         loginPage = PageFactory.initElements(driver, LoginPage.class);
+        loginPage.goTo().logIn();
     }
 
     @AfterEach
